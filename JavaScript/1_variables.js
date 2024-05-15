@@ -1,7 +1,19 @@
 /** @format */
 
 //! Variables :
-//* Variables are containers for storing data/values.
+/* Variables are used to store data in JavaScript. Variables are used to store reusable values. The values of the variables are allocated using the assignment operator(“=”).
+
+JavaScript assignment operator is equal (=) which assigns the value of the right-hand operand to its left-hand operand.
+
+JavaScript Identifiers
+JavaScript variables must have unique names. These names are called Identifiers.
+
+Basic rules to declare a variable in JavaScript:
+   These are case-sensitive
+   Can only begin with a letter, underscore(“_”) or “$” symbol
+   It can contain letters, numbers, underscore, or “$” symbol
+   A variable name cannot be a reserved keyword.
+*/
 
 //* Variables can be declared by three "keyword" :
 //? 1. var

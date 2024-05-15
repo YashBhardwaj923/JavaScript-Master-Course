@@ -1,11 +1,14 @@
 /** @format */
 
 //! Data Types :
+/* JavaScript is a dynamically typed (also called loosely typed) scripting language. In JavaScript, variables can receive different data types over time.
+The latest ECMAScript standard defines eight data types Out of which seven data types are Primitive(predefined) and one complex or Non-Primitive. */
+
 /* There are two types of data types :
    1. Primitive Data Type
    2. Non-Primitive Data Type */
 
-//? 1... Primitive Data Types :->
+//? 1... Primitive Data Types :-> The predefined data types provided by JavaScript language are known as primitive data types. Primitive data types are also known as in-built data types.
 // (Pre-defined Data Types)
 /* there are also to be 5 types :
    1. String
@@ -37,7 +40,7 @@ console.log(undd);
 var nl = null;
 console.log(nl);
 
-//? 2... Non-Primitive Data Types :->
+//? 2... Non-Primitive Data Types :-> The data types that are derived from primitive data types of the JavaScript language are known as non-primitive data types. It is also known as derived data types or reference data types.s
 // (Reference Data Types)
 /* there are also to be 3 types :
    1. Object
