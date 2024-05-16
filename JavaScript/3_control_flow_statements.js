@@ -13,6 +13,8 @@
    4. "switch" statement */
 
 //? 1... "if" statement :-->
+/* The if statement is the fundamental control statement that allows JavaScript to make decisions and execute statements conditionally. */
+
 if (true) {
   console.log("True Section");
 }
@@ -23,6 +25,8 @@ if (age >= 18) {
 }
 
 //? 2... "if...else" statement :-->
+/* The 'if...else' statement is the next form of control statement that allows JavaScript to execute statements in a more controlled way. */
+
 let year = 2023;
 if (year === 2024) {
   console.log("Yes, It's 2024th Sen...");
@@ -31,6 +35,8 @@ if (year === 2024) {
 }
 
 //? 3. "if...else if" statement :-->
+/* The if...else if... statement (also called as if...else ladder)is an advanced form of if…else that allows JavaScript to make a correct decision out of several conditions. */
+
 let day = 6;
 if (day == 1) {
   console.log("Today's Day Monday");
@@ -51,6 +57,8 @@ if (day == 1) {
 }
 
 //? 4. "switch" statement :-->
+/* JavaScript switch statement provides a way to execute different code blocks based on different conditions. It’s an alternative to using multiple if...else if...else statements when you have multiple conditions to check. */
+
 let month = 4;
 switch (month) {
   case 1:
@@ -93,14 +101,23 @@ switch (month) {
 }
 
 //* 2... Looping Statements :
+/* Looping in programming languages is a feature that facilitates the execution of code blocks repeatedly until some condition becomes false. In this article, we will cover for loop which provides a brief and systematic way of writing the loop structure. */
+
 /* there are also to be different types :
    1. "do...while" loop
    2. "while" loop
    3. "for" loop
-   4. "for...in" loop
-   5. "for...of" loop */
+ */
+
+/* Basically there are mainly two types of loops: 
+  1. Entry Controlled loops : "while loop" & "for loop" 
+  2. Exit Controlled loops : "do...while loop" */
 
 //? 1... "do...while" loop :-->
+/* A do… while loop in JavaScript is a control statement in which the code is allowed to execute continuously based on a given boolean condition. It is like a repeating if statement.
+
+The do…while loop can be used to execute a specific block of code at least once */
+
 let counter = 0;
 do {
   console.log(counter);
@@ -108,6 +125,8 @@ do {
 } while (counter <= 5);
 
 //? 2... "while" loop :-->
+/* In JavaScript, a while loop is a control flow statement that repeatedly executes a block of code as long as a specified condition evaluates to true. */
+
 let i = 1;
 while (i <= 5) {
   console.log(i);
@@ -115,11 +134,18 @@ while (i <= 5) {
 }
 
 //? 3... "for" loop :-->
+/* JavaScript for loop is used to iterate the elements/code block a fixed number of times. It is used if the number of the iteration is known.
+
+for statement creates the loop that accepts three optional expressions and a code block that will be executed in a loop. */
+
 for (let i = 1; i <= 7; i++) {
   console.log("for loop - ", i);
 }
 
 //? BREAK & CONTINUE :==>
+/* JavaScript break statement is used to terminate the execution of the loop or the switch statement when the condition is true. */
+/* The continue statement in Javascript is used to break the iteration of the loop and follow with the next iteration.  */
+
 let x = 1;
 while (x <= 5) {
   console.log(x);
