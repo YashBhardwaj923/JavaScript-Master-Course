@@ -1,0 +1,167 @@
+/** @format */
+
+//!JS Operators
+/*In JavaScript, an operator is a specical symbol used to perform operations on operands(values & variables).
+  We can say that an operator operates the operands. 
+  In JavaScript operators are used for compare values, perform arthimetic operations etc..
+operad:- An operand can be a constant, a variable or a function result.
+operator:- An operators are arithmetic, logical and relational...
+
+OOO ==> Operator Operates the Operands.
+    
+==> there are various operators supported by JavaScript:
+> 1. Arithmetic Operators
+> 2. Comparision Operators
+> 3. Logical Operators
+> 4. Assignment Operators
+> 5. Ternary Operators
+> 6. typeOf Operators */
+
+/*1.) Arithmetic Operators:- 
+    -These operators are used to perform arithmetic calculations.
+   there are difference types:-  
+  OPERATORS            NAME                 SYNTAX
+      +              addition                a+b
+      -             subtraction              a-b
+      *            multiplication            a*b
+      /              division                a/b
+      %          (modulus)remainder          a%b
+      ++            increment                a++ or  ++a
+      --            decrement                a-- or  --a
+      **        exponentiotion(power)        a*b  */
+
+// Examples :->
+//* addition -->>
+let a = 10;
+let b = 30;
+console.log(a + b);
+
+let x = "Hello";
+let y = " Shree";
+console.log(x + y);
+//note : concatination.
+
+console.log("Aushi" + 34);
+
+console.log(10 + "Hello");
+
+console.log(1 + 2 + 3 + 4 + "5");
+
+console.log("5" + 4 + 3 + 2 + 1);
+
+console.log(undefined + undefined); // output : NaN => Not a Number
+
+console.log(null + null); // output : 0
+
+console.log(true + true); // 2
+
+console.log(true + false); // 1
+
+//* subtraction -->>
+let l = 45;
+let m = 30;
+console.log(l - m);
+
+console.log("Hello" - 34); // output : NaN
+
+console.log("Hello" - "Hello"); // output : NaN
+
+console.log(true - true);
+//note : here, true -> 1 and false -> 0
+
+console.log(true - 1);
+
+//* multiplication -->>
+let o = 7;
+let p = 6;
+console.log(o * p);
+
+console.log(true * 5);
+
+console.log(true * false);
+
+console.log(null * 5); // output : 0
+
+console.log("Hello" * 6); // output : NaN
+
+//* division -->>
+let q = 8;
+let r = 2;
+console.log(q / r);
+
+console.log(true / false); // output : Infinity
+
+console.log("Hello" / 7); // output : NaN
+
+//* (modulus)remainder -->
+let s = 9;
+let t = 3;
+console.log(s % t);
+
+console.log(55 % 7);
+
+//* increment -->
+let u = 5;
+u++;
+console.log(u);
+
+//* decrement -->
+let v = 8;
+v--;
+console.log(v);
+
+//* exponentiotion(power) -->
+console.log(3 ** 2);
+
+console.log(5 ** 5);
+
+/*2.)Comparison Operator:-
+   -the comparison operators are mainly used to perform the logical operations that determine the equality or difference between the values.  
+  there are different types:- 
+   OPERATORS           NAME                       SYNTAX
+      ==             equal to                      x=y
+      ===        equal value & equal datatype      x===y
+      !=            not equal                      x!=y
+      !==        not equal value & datatype        x!==y
+      >             greater than                   x>y
+      <             less than                      x>y
+      >=         greater than & equalto            x>=y
+      <=         less than & equalto               x<=y */
+
+/*3.) Logical Operator:- 
+   logical operators operates an boolean expressions to combine the result of these boolean expression into a single boolean value.
+ there are different types:- 
+   OPERATOR           NAME                CONDITION
+     &&           logical AND        if(condition1 && condition2){ statement }
+     ||           logical OR         if(condition1 || condition2){ statement }
+     !            logical NOT        if(! condition){ statement } */
+
+/*4.) Assignment Operator:- 
+   The simple assignment operator (=) is used to assign a value to a variable.
+   The Assignment operator is  equal (=) which assigns the value of right-hand operand to its left-hand operand.
+   That is if a = b assigns the value of b to a.  
+ there are so many types:- 
+    NAME                   OPEARTOE      SHORTHAND      MEANING
+ addition ass.                +=           a+=b          a=a+b
+ subtraction ass.             -=           a-=b          a=a-b
+ multipli. ass.                =           a=b           a=a*b
+ division ass.                /=           a/=b          a=a/b
+ remainder ass.               %=           a%=b          a=a%b
+ exponentiation ass.          *=           a=b           a=a*b
+ left shift                   <<=          a<<=b         a=a<<b
+ right shift                  >>=          a>>=b         a=a>>b
+ bitwise AND                  &=           a&=b          a=a&b
+ bitwise OR                   |=           a|=b          a=a|b
+ bitwise XOR                  ^=           a^=b          a=a^b */
+
+/*5.) Ternary Opearators:-
+    The ternary operator is a simplified conditional operator like:if/else.  
+    “Question mark” or “conditional” operator in JavaScript is a ternary operator that has three operands.
+     The expression consists of three operands: the condition, value if true and value if false.
+     The evaluation of the condition should result in either true/false or a boolean value.
+     The true value lies between “?” & “:” and is executed if the condition returns true.
+     Similarly, the false value lies after “:” and is executed if the condition returns false.
+      
+          syntax:-    condition ? value if true : value if false */
+
+/*6.) typeOf Operator:- */
