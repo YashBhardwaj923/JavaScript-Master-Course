@@ -26,6 +26,7 @@ Basic rules to declare a variable in JavaScript:
    The scope of a "var" is function and global scope.
    It can be update & re-declared into the scope.
    It can be declared without initialization. */
+
 var a;
 console.log(a);
 
