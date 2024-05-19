@@ -128,6 +128,35 @@ console.log(5 ** 5);
       >=         greater than & equalto            x>=y
       <=         less than & equalto               x<=y */
 
+// Examples :
+//* equals to (==) [double equal] -->
+var e = 20;
+var f = "20";
+console.log(e == f);
+
+//* equal value & data type (===) -->
+console.log(e === f);
+
+//* not equal (!=) -->
+var ab = 7;
+var cd = "7";
+console.log(ab != cd);
+
+//* not equal value & data type (!==) -->
+console.log(ab !== cd);
+
+//* greater then (>) -->
+console.log(10 > 6);
+
+//* less then (<) -->
+console.log(9 < 4);
+
+//* greater then equal (>=) -->
+console.log(10 >= 10);
+
+//* less then equal (<=) -->
+console.log(20 <= 20);
+
 /*3.) Logical Operator:- 
    logical operators operates an boolean expressions to combine the result of these boolean expression into a single boolean value.
  there are different types:- 
@@ -135,6 +164,31 @@ console.log(5 ** 5);
      &&           logical AND        if(condition1 && condition2){ statement }
      ||           logical OR         if(condition1 || condition2){ statement }
      !            logical NOT        if(! condition){ statement } */
+
+// Examples :
+//* Logical "AND" -->
+let age = 60;
+if (age >= 18 && age <= 50) {
+  console.log("eligible for voting");
+} else {
+  console.log("not eligible for voting");
+}
+
+//* Logical "OR" -->
+let salary = 100000;
+if (salary == 100000 || salary == 200000) {
+  console.log("you get bonus");
+} else {
+  console.log("no bonus");
+}
+
+//* Logical "NOT" -->
+let isMarried = false;
+if (!isMarried) {
+  console.log("You can apply for loan");
+} else {
+  console.log("Sorry you are married, You cannot apply for loan");
+}
 
 /*4.) Assignment Operator:- 
    The simple assignment operator (=) is used to assign a value to a variable.
@@ -144,15 +198,46 @@ console.log(5 ** 5);
     NAME                   OPEARTOE      SHORTHAND      MEANING
  addition ass.                +=           a+=b          a=a+b
  subtraction ass.             -=           a-=b          a=a-b
- multipli. ass.                =           a=b           a=a*b
+ multipli. ass.               *=           a*=b          a=a*b
  division ass.                /=           a/=b          a=a/b
  remainder ass.               %=           a%=b          a=a%b
- exponentiation ass.          *=           a=b           a=a*b
+ exponentiation ass.          **=          a**=b         a=a**b
  left shift                   <<=          a<<=b         a=a<<b
  right shift                  >>=          a>>=b         a=a>>b
  bitwise AND                  &=           a&=b          a=a&b
  bitwise OR                   |=           a|=b          a=a|b
  bitwise XOR                  ^=           a^=b          a=a^b */
+
+// Example:
+//* addition ass. (+=)
+let asin = 10;
+asin += 5; // same as saying asin = asin + 5
+console.log(asin);
+
+//* subtraction ass. (-=)
+let dsub = 36;
+dsub -= 8; // same as saying dsub = dsub - 8
+console.log(dsub);
+
+//* multipli. ass. (*=)
+let mult = 2;
+mult *= 9; // same as saying mult = mult * 9
+console.log(mult);
+
+//*  division ass. (/=)
+let divi = 10;
+divi /= 2; // same as saying divi = divi / 2
+console.log(divi);
+
+//*  remainder ass. (%=)
+let rem = 7;
+rem %= 4; // same as saying rem = rem % 4
+console.log(rem);
+
+//* exponentiation ass. (**=)
+let exp = 2;
+exp **= 3; // same as saying exp = exp ** 3
+console.log(exp);
 
 /*5.) Ternary Opearators:-
     The ternary operator is a simplified conditional operator like:if/else.  
@@ -162,6 +247,47 @@ console.log(5 ** 5);
      The true value lies between “?” & “:” and is executed if the condition returns true.
      Similarly, the false value lies after “:” and is executed if the condition returns false.
       
-          syntax:-    condition ? value if true : value if false */
+     syntax:-    condition ? value if true : value if false */
+
+// Examples :
+let days = 1;
+let showDay =
+  days === 1
+    ? "Monday"
+    : days === 2
+    ? "Tuesday"
+    : days === 3
+    ? "Wednesday"
+    : days === 4
+    ? "Thursday"
+    : days === 5
+    ? "Friday"
+    : days === 6
+    ? "Saturday"
+    : days === 7
+    ? "Sunday"
+    : "Please Enter Valid Day!";
+console.log(showDay);
+
+let auu = 12;
+let allow = auu >= 18 ? "You are eligible for voting" : "No!";
+console.log(allow);
 
 /*6.) typeOf Operator:- */
+
+// Examples :
+console.log(typeof 10);
+
+console.log(typeof "Hello");
+
+console.log(typeof true);
+
+console.log(typeof undefined);
+
+console.log(typeof null);
+
+console.log(typeof {});
+
+console.log(typeof []);
+
+console.log(typeof function () {});
