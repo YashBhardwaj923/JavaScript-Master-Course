@@ -130,19 +130,27 @@ console.log(5 ** 5);
 
 // Examples :
 //* equals to (==) [double equal] -->
+/* - Double equals (==) is often referred to as 'loose equality' because it performs type coercion before making any comparison.
+   - This means that if the datatypes of the operands we are comparing are different, then the JavaScript Engine automatically converts one of the operands to be the same as the other one in order to make the comparison possible. */
 var e = 20;
 var f = "20";
 console.log(e == f);
 
 //* equal value & data type (===) -->
+/* - Triple equals (===), also referred to as "strict equality", works similarly to how double equals (==) works, with one important difference: it does not convert the types of the operands before comparing. */
 console.log(e === f);
 
 //* not equal (!=) -->
+/* - The inequality operator (!=) is the logical opposite of the equality operator. It means “Not Equal” and returns true whereas equality would return false and vice versa. Like the equality operator, the inequality operator will convert data types of values while comparing.
+   - For example 1 != ‘1’ will return false since data type conversion takes place so 1 and ‘1’ are considered equal. */
 var ab = 7;
 var cd = "7";
 console.log(ab != cd);
 
 //* not equal value & data type (!==) -->
+/* - The strict inequality operator (!==) is the logical opposite of the strict equality operator. It means “Strictly Not Equal” and returns true whereas strict equality would return false and vice versa.
+   - Strict inequality will not convert data types.
+   - For example 1 !== ‘1’ will return true since 1 is an integer and ‘1’ is a character and no data type conversion takes place. */
 console.log(ab !== cd);
 
 //* greater then (>) -->
@@ -167,6 +175,7 @@ console.log(20 <= 20);
 
 // Examples :
 //* Logical "AND" -->
+/* - Evaluates operands and return true only if all are true */
 let age = 60;
 if (age >= 18 && age <= 50) {
   console.log("eligible for voting");
@@ -175,6 +184,7 @@ if (age >= 18 && age <= 50) {
 }
 
 //* Logical "OR" -->
+/* - Returns true even if one of the multiple operands is true */
 let salary = 100000;
 if (salary == 100000 || salary == 200000) {
   console.log("you get bonus");
@@ -183,6 +193,7 @@ if (salary == 100000 || salary == 200000) {
 }
 
 //* Logical "NOT" -->
+/* - Converts operator to boolean and returns flipped value */
 let isMarried = false;
 if (!isMarried) {
   console.log("You can apply for loan");
