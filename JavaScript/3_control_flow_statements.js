@@ -172,3 +172,28 @@ for (let i = 1; i <= 5; i++) {
    Q3. make a "temperature calulator" using "switch" & "if...else if" statements.
        
    Q3. make a 2's table, 5's table, 7's table using "do...while", "while" & "for" loop. */
+
+// Solution 1:->
+/* in this solution, we are using "prompt()" and "parsInt()". 
+  "prompt()" -> for taking user input.
+  "parsInt()" -> convert string to number. */
+
+let time = prompt("Please Enter Time", "Ex: 0 to 12");
+let zone = prompt("Please Enter Zone", "Ex: am or pm");
+
+if (zone === "am") {
+  if (time >= 0 && time <= 12) {
+    console.log("Good Morning, Have a Nice Day!");
+  }
+} else if (zone === "pm") {
+  if (time >= 1 && time < 4) {
+    console.log("Good After Noon");
+  } else if (time > 4 && time <= 9) {
+    let ask = prompt("Choose AnyOne", "No Sleep & Sleep");
+    if (ask === "No Sleep") {
+      console.log("Good Evening!");
+    } else if (ask === "Sleep") {
+      console.log("Good Night Bro!");
+    }
+  }
+}
